@@ -1,3 +1,3 @@
 #!/bin/bash
 NAME=$1
-awk -F "/" '{print $NF}' $NAME
+awk -F "/" 'NR>1{print $NF}' $NAME
